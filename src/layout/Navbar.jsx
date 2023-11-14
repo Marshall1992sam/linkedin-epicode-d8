@@ -1,10 +1,9 @@
 import React from "react";
-import Logo from '../assets/Logo.png';
-import Pippo from "../assets/pippo.jpg";
+import Logo from "./Logo.png";
+import Pippo from "./pippo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Dropdown from '../layout/Dropdown'
+import { faSearch,faHome, faUserFriends, faBriefcase, faCommentDots, faBell, faCircleUser, faMessage} from "@fortawesome/free-solid-svg-icons";
 
-import { faSearch,faHome, faUserFriends, faBriefcase,  faBell,  faMessage , faDot} from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Navbar() {
@@ -13,11 +12,11 @@ export default function Navbar() {
       <div className="navbar-wrap">
         <div className="navbarContentColOne">
           <div className="logoContainer" >
-           <img src={Logo} alt="logo" style={{width:"50px"}}/>
+           <img src={Logo} alt="logo" style={{width:"40px"}}/>
           </div>
 
           <div className="appSearchNavbar">
-            <FontAwesomeIcon icon={faSearch} className="search" />
+            <FontAwesomeIcon className="search-icon" icon={faSearch} />
             <input type="text" placeholder="Search"/>
           </div>
         </div>
@@ -46,8 +45,7 @@ export default function Navbar() {
           <div className="userimg">
             <img src={Pippo} alt="" />
           </div>
-          <ion-icon name="apps-outline" ></ion-icon>
-          <Dropdown/>
+          
         </div>
       </div>
     </div>
