@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../../layout/Logo.png'
-import Google from '../../layout/google-icon.png'
+import Logo from '../assets/Logo.png'
+import Google from '../assets/google-icon.png'
 import { Link } from "react-router-dom";
 
 const Login = (props) => {
