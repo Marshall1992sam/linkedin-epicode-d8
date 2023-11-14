@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "./Logo.png";
+import Pippo from "./pippo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch,faHome, faUserFriends, faBriefcase, faCommentDots, faBell, faCircleUser, faMessage} from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -21,13 +22,30 @@ export default function Navbar() {
         </div>
 
         <div className="navbarContentColTwo">
-          <ul>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
-          </ul>
+          <div className="home"> 
+          <FontAwesomeIcon icon={faHome}/>
+          <p>Home</p>
+          </div>
+         <div className="net">
+          <FontAwesomeIcon icon={faUserFriends}/>
+          <p>Rete</p>
+         </div>
+          <div className="work">
+          <FontAwesomeIcon icon={faBriefcase}/>
+          <p>Lavoro</p>
+          </div>
+          <div className="message">
+          <FontAwesomeIcon icon={faMessage}/>
+          <p>Messaggistica</p>
+          </div>
+          <div className="notify">
+          <FontAwesomeIcon icon={faBell}/>
+          <p>Notifica</p>
+          </div>
+          <div className="userimg">
+            <img src={Pippo} alt="" />
+          </div>
+          
         </div>
       </div>
     </div>

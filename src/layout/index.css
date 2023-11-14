@@ -10,11 +10,91 @@
   padding-top: 15px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .navbarContentColOne {
   display: flex;
   align-items: center;
 }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home:hover{
+  color:black;
+  cursor: pointer;
+}
+
+
+.net{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.net:hover{
+  color:black;
+  cursor: pointer;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work:hover{
+  color:black;
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.message:hover{
+  color:black;
+  cursor: pointer;
+}
+
+.notify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notify:hover{
+  color:black;
+  cursor: pointer;
+}
+
+.navbarContentColTwo {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+
+.userimg {
+  width: 40px;
+  height: 40px;
+  
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.userimg > img{
+  width: 30px;
+  object-fit: contain;
+  z-index: -1;
+}
+
+
 .logoContainer {
   margin-right: 15px;
 }
