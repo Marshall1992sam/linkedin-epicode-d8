@@ -8,7 +8,6 @@ import Navbar from './layout/Navbar'
 function App() {
   return (
     <BrowserRouter>
-        <Navbar/>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />

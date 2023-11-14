@@ -12,11 +12,11 @@ export default function Navbar() {
       <div className="navbar-wrap">
         <div className="navbarContentColOne">
           <div className="logoContainer" >
-           <img src={Logo} alt="logo" style={{width:"50px"}}/>
+           <img src={Logo} alt="logo" style={{width:"40px"}}/>
           </div>
 
           <div className="appSearchNavbar">
-            <FontAwesomeIcon icon={faSearch} />
+            <FontAwesomeIcon className="search-icon" icon={faSearch} />
             <input type="text" placeholder="Search"/>
           </div>
         </div>
