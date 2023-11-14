@@ -1,0 +1,19 @@
+.home-page-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.home-page-cards .home-page-col-one {
+  width: 20%;
+  background-color: white;
+  height:250px;
+}
+.home-page-cards .home-page-col-two {
+  width: 47%;
+  background-color: white;
+  height:250px;
+}
+.home-page-cards .home-page-col-three {
+  width: 30%;
+  background-color: white;
+  height:250px;
+}
