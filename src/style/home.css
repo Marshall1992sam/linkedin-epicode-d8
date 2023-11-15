@@ -1,19 +1,161 @@
 .home-page-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 10px 273px;
 }
 .home-page-cards .home-page-col-one {
-  width: 20%;
+  width: 60%;
   background-color: white;
-  height:250px;
+  height: 480px;
+
+  margin-right: 25px;
+  border-radius: 5px;
 }
 .home-page-cards .home-page-col-two {
-  width: 47%;
+  width: 25%;
   background-color: white;
-  height:250px;
+  height: 200px;
+  border-radius: 5px;
 }
-.home-page-cards .home-page-col-three {
-  width: 30%;
+.edit {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px ;
+}
+
+.language > span {
+  color: grey;
+  margin: 10px;
+}
+
+hr {
+  margin: 30px 10px;
+  width: 90%;
+  padding-left: 110px;
+  color: #E8E8E8;
+}
+
+.edit1:hover{
+  cursor: pointer;
+}
+.copertin-img {
+  width: 100%;
+  height: 200px;
+}
+
+.copertin-img img {
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+}
+
+.profile-user {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+  border: 5px solid white;
+  top: -91px;
+  left: 20px;
+}
+
+.profile-user img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.user-name {
+  position: relative;
+  top: -66px;
+  left: 25px;
+}
+
+.user-name h2 {
+  font-weight: 600;
+}
+
+.user-name p {
+  padding-top: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: grey;
+}
+
+.buttons {
+  display: flex;
+}
+
+.lookingfor {
+  width: 200px;
+  height: 50px;
+}
+
+.lookingfor button {
+  margin-top: 50px;
+  width: 180px;
+  height: 40px;
+  color: white;
+  background-color: rgb(10, 102, 194);
+  font-weight: bold;
+  font-size: 1rem;
+  border: transparent;
+}
+.lookingfor button:hover {
+  color: white;
+  background-color: #004182;
+  cursor: pointer;
+}
+
+.section-btn {
+  width: 200px;
+  height: 50px;
+}
+
+.section {
+  margin-top: 50px;
+  width: 240px;
+  height: 40px;
+  color: rgb(10, 102, 194);
+  background-color: (255, 255, 255, 0);
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid #176fc6;
+}
+
+.section:hover {
+  border: 1px solid #176fc6;
+  color: #176fc6;
+  background-color: #e2f0fe;
+  cursor: pointer;
+}
+
+.other {
+  width: 80px;
+  height: 40px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.other-btn {
+  width: 80px;
+  height: 40px;
+}
+
+.other-btn:hover {
+  cursor: pointer;
+}
+
+
+
+.container-three{
+  width: 100%;
+  height: 400px;
   background-color: white;
-  height:250px;
+}
+.title-container-three{
+  color: black;
+  font-size: 30px;
+
 }

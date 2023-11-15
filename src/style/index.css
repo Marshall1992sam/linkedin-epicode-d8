@@ -1,3 +1,6 @@
+.logoContainer {
+  display: flex;
+}
 .navbar {
   width: 100vw;
   height: 70px;
@@ -83,10 +86,11 @@
 }
 
 .userimg {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   overflow: hidden;
+  border: 1px solid;
 }
 
 .userimg > img {
@@ -176,6 +180,86 @@
 .close-icon:hover {
   background-color: rgb(227, 227, 227);
   border-radius: 10px;
- 
+}
+.first-block {
+  box-sizing: border-box;
+  overflow-y: auto;
+  border: 2px solid rgb(227, 227, 227);
+  border-radius: 10px;
+  height: 150px;
+  margin-top: 10px;
+}
+.first-block h1 {
+  color: black;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.linea {
+  border: 1px solid rgb(227, 227, 227);
+  margin-top: 10px;
+}
+.container-icon-link {
+  display: flex;
+  justify-content: space-around;
+}
+.icone-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 40px;
+  fill: rgb(10, 102, 194);
+  box-shadow: none;
+  border-radius: 50%;
+  transition: transform 0.3s; 
 }
 
+.icone-link:hover {
+  transform: scale(1.2);
+}
+
+.icone-link span {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-wrap {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .navbarContentColOne {
+    width: 100%;
+    text-align: center;
+  }
+  .navbarContentColTwo {
+    display: none;
+  }
+
+  .appSearchNavbar input {
+    width: 100%;
+  }
+
+  .grid-container {
+    margin-top: 15px;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .navbarContentColTwo {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (min-width: 901px) {
+  .navbar-wrap {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+}
