@@ -1,11 +1,26 @@
 import React from "react";
 import NavBar from "./Navbar";
 import "../style/home.css";
+import "../style/Modal.css";
 import Copertina from "../assets/disney.jpg";
 import Pippo from "../assets/pippo.jpg";
+import Modal from "../layout/Modal";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 export default function Index() {
+  const [showModal, setShowModal] = useState();
+
+  // const openModalHandler = () => {
+  //   setShowModal(true);
+  //   console.log("Modal aperto!");
+  // };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div>
       <NavBar />
@@ -27,7 +42,7 @@ export default function Index() {
                     <button className="looking">Disponibile per</button>
                   </div>
                   <div className="section-btn">
-                    <button className="section">
+                    <button className="section-1">
                       Aggiungi sezione del profilo
                     </button>
                   </div>
@@ -36,21 +51,26 @@ export default function Index() {
                   </div>
                 </div>
               </div>
-          <div className="container-three">
-            <p className="title-container-three">Esperienze</p>
-          </div>
+              <div className="container-three">
+                <div className="title-container-three">
+                  <p className="title-three">Esperienze</p>
+                  <span className="icone-container-one"></span>
+                  <div className="list"></div>
+                  <Modal isOpen={showModal} closeModal={closeModal} />
+                </div>
+              </div>
             </div>
             <div className="home-page-col-two">
               <div className="language">
                 <div className="edit">
-                <h3>Lingua del profilo</h3>
-                  <FontAwesomeIcon icon={faPen} className="edit1"/>
+                  <h3>Lingua del profilo</h3>
+                  <FontAwesomeIcon icon={faPen} className="edit1" />
                 </div>
                 <span>Italiano</span>
                 <hr />
                 <div className="edit">
-                <h3>Public profile & URL</h3>
-                  <FontAwesomeIcon icon={faPen}/>
+                  <h3>Public profile & URL</h3>
+                  <FontAwesomeIcon icon={faPen} />
                 </div>
                 <span>www.linkedin.com/in/1969a5279</span>
               </div>

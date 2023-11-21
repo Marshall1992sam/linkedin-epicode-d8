@@ -1,0 +1,14 @@
+.exp {
+  display: flex;
+  flex-direction: column;
+
+  margin: 50px 10px;
+  width: 100%;
+}
+
+.list-exp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-end;
+}
